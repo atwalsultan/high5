@@ -17,12 +17,8 @@
         <a href="<?php home_url( '/' ); ?>">
           <?php bloginfo('name'); ?>
         </a>
-      </h1>
-
-      <div class="site-description">
-        <?php bloginfo('description'); ?>
-      </div>  
-
+      </h1>  
+      
     </div> <!-- .site-branding -->
 
     <div class="site-navigation">
