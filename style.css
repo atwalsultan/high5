@@ -455,4 +455,23 @@ header a, header a:visited {
 header li.current-menu-item a {
   color: #FA812A;
 }
+
+footer {
+  padding: .2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
