@@ -1,6 +1,6 @@
 <?php ?>
 <article <?php post_class(); ?>>
-  <?php  the_post_thumbnail(); ?>
+  <a href="<?php the_permalink() ?>"><?php  the_post_thumbnail(); ?></a>
 
   <div class="review-content">
     <?php the_excerpt(); ?>

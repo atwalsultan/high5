@@ -409,12 +409,6 @@ header .site-branding h1 {
   margin: 0;
 }
 
-@media screen and (min-width: 525px) {
-  header .site-branding .site-title {
-    display: none;
-  }
-}
-
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,13 +432,6 @@ header ul {
 header img {
   max-width: 50px;
   height: auto;
-  display: none;
-}
-
-@media screen and (min-width: 525px) {
-  header img {
-    display: block;
-  }
 }
 
 header a, header a:visited {
@@ -454,7 +441,7 @@ header a, header a:visited {
 
 header li.current-menu-item a {
   color: #FA812A;
-  font-size: 600;
+  font-weight: 600;
 }
 
 article.page.type-page {
@@ -473,6 +460,7 @@ section.reviews {
   margin: auto;
   margin-bottom: 2rem;
   max-width: 875px;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 850px) {
@@ -492,15 +480,33 @@ section.reviews article {
           flex-flow: row nowrap;
   border: 1px solid lightgray;
   max-width: 550px;
-  max-height: 350px;
+  max-height: 400px;
   margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-section.reviews article img {
+section.reviews article > a {
   max-width: 40%;
-  height: auto;
+  display: block;
+  overflow: hidden;
+}
+
+section.reviews article > a img {
   -o-object-fit: cover;
      object-fit: cover;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+
+section.reviews article > a img:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 section.reviews article .review-content {
@@ -518,8 +524,9 @@ section.reviews article .review-content {
   gap: 1.75rem;
 }
 
-section.reviews article .review-content p {
+section.reviews article .review-content > p {
   margin: 0;
+  line-height: 200%;
 }
 
 section.reviews article .review-content a {
