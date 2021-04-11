@@ -59,4 +59,8 @@ if ( is_page( 'contact-us' ) ) :
   get_template_part('template-parts/content-contact-us');
 endif;
 
+if ( is_singular( 'review' ) ) :
+  get_template_part('template-parts/single-review');
+endif;
+
 get_footer(); ?>

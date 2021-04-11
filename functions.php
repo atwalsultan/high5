@@ -26,6 +26,8 @@ add_action('after_setup_theme', 'high5_setup');
  
 function high5_scripts_styles(){
    wp_enqueue_style('high5_style', get_stylesheet_uri(), array(), time());
+
+   wp_enqueue_style('high5_google_fonts', "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700", array(), null);
 }
  
 add_action('wp_enqueue_scripts', 'high5_scripts_styles');
