@@ -1,0 +1,117 @@
+// Variables
+$site-font: 'Open Sans', Helvetica, Arial, Sans-serif;
+
+$link-color1: #5078B5;
+$link-color2: #FA812A;
+$text-color: #1C1C1C;
+$text-color-light: #737373;
+
+
+// Typography
+
+body {
+    font-family: $site-font;
+}
+
+.section-title{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: $text-color;
+    text-align: left;
+
+    @media screen and (min-width:850px) {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 600;
+    color: $text-color;
+
+    @media screen and (min-width:850px) {
+        font-size: 2rem;
+    }
+}
+
+.feature-desc {
+    font-size: 1rem;
+    line-height: 2;
+    color: $text-color-light;
+
+    @media screen and (min-width:850px) {
+        font-size: 1.125rem;
+    }
+}
+
+.ext-link {
+    font-family: $site-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    color: $link-color1;
+    text-decoration: none;
+}
+
+.ext-link:hover {
+    text-decoration: underline;
+}
+
+.post-53 .ext-link {
+    color: $link-color2;
+}
+
+// Layout
+
+.site-main {
+    padding-left: 4%;
+    padding-right: 4%;
+
+    @media screen and (min-width:850px){
+        max-width: 1024px;
+        margin: auto;
+    }
+}
+
+.site-main .features article {
+    display: block;
+    margin-bottom: 4rem;
+
+     .article-image {
+        padding-top: 1rem;
+        max-width: 50%;
+        margin: auto;
+    }
+
+    @media screen and (min-width:850px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 7.75rem;
+
+        .article-image {
+            max-width: 100%;
+            margin: auto;
+            padding-top: 0;
+        }
+        
+    }
+}
+
+.post-45, .post-50 {
+    .article-content {
+        grid-column: 2/3;
+    }
+
+    .article-image {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
