@@ -53,6 +53,18 @@ if ( is_page( 'reviews' ) ) : ?>
       endif;
     ?>
   </section>
+
+  <section class="review-page-content">
+      <?php
+        if ( have_posts() ) :
+          while ( have_posts() ) :
+            the_post();
+            the_post_thumbnail();
+            the_content();
+          endwhile;
+        endif;
+      ?>
+  </section>
 <?php endif;
 
 if ( is_page( 'contact-us' ) ) :

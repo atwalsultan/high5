@@ -586,4 +586,75 @@ footer {
   background-color: black;
   color: white;
 }
+
+.review-page-content > img {
+  max-width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.review-page-content .wp-block-button {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .review-page-content .wp-block-button {
+    position: relative;
+    right: 1.5rem;
+  }
+}
+
+.review-page-content .wp-block-buttons > .wp-block-button.has-custom-width .wp-block-button__link {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+section.banner article {
+  max-width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin: 3rem auto;
+}
+
+section.banner article div:nth-of-type(2) {
+  text-align: center;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  max-width: 100%;
+  margin: auto;
+  line-height: 200%;
+}
+
+section.banner article div:nth-of-type(2) .wp-block-buttons > .wp-block-button.wp-block-button__width-50 {
+  position: relative;
+  right: 1.5rem;
+}
+
+@media screen and (min-width: 850px) {
+  section.banner article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.banner article > div:first-of-type, section.banner article > div:last-of-type {
+    max-width: 27%;
+  }
+}
+
+section.banner .wp-block-buttons > .wp-block-button:last-child {
+  margin: 0;
+}
 /*# sourceMappingURL=style.css.map */
