@@ -23,12 +23,6 @@ header {
         h1 {
             margin: 0;
         }
-
-        .site-title {
-            @media screen and (min-width: 525px) {
-                display: none;
-            }
-        }
     }
 
     ul {
@@ -47,11 +41,6 @@ header {
     img {
         max-width: 50px;
         height: auto;
-        display: none;
-
-        @media screen and (min-width: 525px) {
-            display: block;
-        }
     }
 
     a, a:visited {
@@ -62,7 +51,7 @@ header {
     li.current-menu-item {
         a {
             color: #FA812A;
-            font-size: 600;
+            font-weight: 600;
         }
     }
 }
@@ -82,6 +71,7 @@ section.reviews {
     margin: auto;
     margin-bottom: 2rem;
     max-width: 875px;
+    padding: 1rem;
 
     @media screen and (min-width: 850px) {
         grid-template-columns: repeat(2, 1fr);
@@ -92,13 +82,28 @@ section.reviews {
         flex-flow: row nowrap;
         border: 1px solid lightgray;
         max-width: 550px;
-        max-height: 350px;
+        max-height: 400px;
         margin: auto;
+        border-radius: 5px;
+        overflow: hidden;
 
-        img {
+        & > a {
             max-width: 40%;
-            height: auto;
-            object-fit: cover;
+            display: block;
+            overflow: hidden;
+
+            img {
+                object-fit: cover;
+                height: 100%;
+                display: block;
+                overflow: hidden;
+
+                &:hover {
+                   transform: scale(1.4)
+                }
+
+                transition: transform .3s ease-out;
+            }
         }
 
         .review-content {
@@ -108,8 +113,9 @@ section.reviews {
             justify-content: space-between;
             gap: 1.75rem;
 
-            p {
+            & > p {
                 margin: 0;
+                line-height: 200%;
             }
 
             a {
