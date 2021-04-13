@@ -12,6 +12,7 @@ get_header();
 // endif; ?>
 
 <section class="features">
+  <h2 class="section-title">Features</h2>
   <?php 
     $args = array(
       'post_type' => 'app_feature',
