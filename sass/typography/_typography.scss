@@ -1,0 +1,176 @@
+// Abhishek's work
+
+// Whole review article (single)
+.single article.review {
+  // Single review header
+  .article-header {
+    text-align: center;
+
+    h1 {
+      margin: 0.5rem 0;
+      font-weight: 600;
+      font-size: 2.5rem;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  .single-content {
+    line-height: 1.5rem;
+  }
+  .single-image {
+    text-align: center;
+  }
+  .single-excerpt {
+    line-height: 1.5rem;
+  }
+}
+
+.single article.review .article-footer {
+  .nav-links {
+    a {
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+}
+
+// Yuvraj's work
+body {
+  font-family: $site-font;
+}
+
+.wp-block-button__link {
+  font-size: 1rem;
+  padding: .5em 1.2em;
+}
+
+section.features {
+  .section-title {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.75rem;
+    text-transform: capitalize;
+    color: $text-color;
+    text-align: left;
+  
+    @media screen and (min-width:850px) {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+  }
+
+  .feature-title {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 600;
+    color: $text-color;
+
+    @media screen and (min-width:850px) {
+      font-size: 2rem;
+    }
+  }
+
+  .feature-desc {
+    font-size: 18px;
+    line-height: 2;
+    color: $text-color-light;
+
+    @media screen and (min-width:850px) {
+      font-size: 18px;
+    }
+  }
+
+  .ext-link {
+    font-family: $site-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    color: $link-color1;
+    text-decoration: none;
+  }
+
+  .ext-link:hover {
+    text-decoration: underline;
+  }
+
+  article:last-of-type .ext-link {
+    color: $link-color2;
+  }
+}
+
+// Sultan's work
+article.page.type-page {
+  margin: 2rem 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+section.banner {
+  .banner-content {
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.page-title {
+  font-size: 1.75rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+// Amandeep's work
+.review-page-content {
+  h2 {
+    margin-top: 3rem;
+    font-weight: 600;
+  }
+}
+
+section.team-members {
+  article {
+    div:nth-of-type(2) {
+      font-weight: 600;
+    }
+  }
+}
+
+// Qi's work
+section.contact-page {
+  .contact-page-title {
+    font-size: 2rem;
+    margin-top: .25rem;
+    text-align: center;
+  }
+
+  .contact-page-form {
+    .nf-form-content  {
+      font-size: 16px;
+    }
+
+    .nf-form-title {
+      font-weight: 400;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .contact-page-form {
+    .nf-form-content  {
+      font-size: 16px;
+    }
+
+    .nf-form-title {
+      font-size: 14px;
+    }
+  }
+}

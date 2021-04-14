@@ -12,11 +12,13 @@ if ( have_posts() ) :
 endif;
 
 if ( is_page( 'our-team' ) ) : ?>
+  <h3 class="page-title">Our Team</h3>
   <section class="team-members">
     <?php 
       $args = array(
         'post_type' => 'team_member',
-        'orderby' => 'rand',
+        'orderby' => 'date',
+        'order' => 'ASC',
       );
     
       $my_query = new WP_Query( $args );
@@ -34,6 +36,7 @@ if ( is_page( 'our-team' ) ) : ?>
 <?php endif;
 
 if ( is_page( 'reviews' ) ) : ?>
+  <h3 class="page-title">Reviews</h3>
   <section class="reviews">
     <?php 
       $args = array(
@@ -67,9 +70,13 @@ if ( is_page( 'reviews' ) ) : ?>
   </section>
 <?php endif;
 
-if ( is_page( 'contact-us' ) ) :
-  get_template_part('template-parts/content-contact-us');
-endif;
+if ( is_page( 'contact-us' ) ) : ?>
+  <section class="contact-page">
+    <?php
+      get_template_part('template-parts/content-contact-us');
+    ?>
+  </section>
+<?php endif;
 
 if ( is_singular( 'review' ) ) :
   get_template_part('template-parts/single-review');

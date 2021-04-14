@@ -14,7 +14,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 @import "reset/reset";
+@import "variables/variables";
 @import "media/media";
-@import "sultan/sultan";
-@import "amandeep/amandeep";
-@import "abhishek/abhishek";
+@import "accessibility/accessibility";
+@import "site-layout/site-layout";
+@import "typography/typography";
+@import "colors/colors";
+@import "base-elements/base-elements";
