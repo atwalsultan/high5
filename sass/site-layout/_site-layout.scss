@@ -74,11 +74,12 @@
 }
 
 // Yuvraj's work
+// Features section on home page
 section.features {
   padding-left: 4%;
   padding-right: 4%;
 
-  @media screen and (min-width:850px){
+  @media screen and (min-width: 850px) {
     max-width: 1024px;
     margin: auto;
   }
@@ -98,7 +99,7 @@ section.features {
       height: auto;
     }
 
-    @media screen and (min-width:850px) {
+    @media screen and (min-width: 850px) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
@@ -112,7 +113,8 @@ section.features {
     }
   }
 
-  article:first-of-type, article:nth-of-type(3) {
+  article:first-of-type,
+  article:nth-of-type(3) {
     .article-content {
       grid-column: 2/3;
     }
@@ -124,6 +126,8 @@ section.features {
   }
 }
 
+// Sultan's work
+// Reviews archive
 section.reviews {
   display: grid;
   grid-template-columns: 1fr;
@@ -174,17 +178,17 @@ section.reviews {
       .author {
         display: flex;
         flex-flow: row nowrap;
-        gap: .5rem;
+        gap: 0.5rem;
 
         p {
-          margin: .25rem 0;
+          margin: 0.25rem 0;
         }
 
         .author-name-occupation {
           flex-grow: 1;
 
           p:last-of-type {
-            font-size: .8rem;
+            font-size: 0.8rem;
             color: #737373;
           }
         }
@@ -202,12 +206,13 @@ section.reviews {
       right: 1.5rem;
     }
   }
-  
-  .wp-block-buttons >.wp-block-button.has-custom-width .wp-block-button__link {
+
+  .wp-block-buttons > .wp-block-button.has-custom-width .wp-block-button__link {
     width: max-content;
   }
 }
 
+// Home page banner
 section.banner {
   article {
     @media screen and (min-width: 1250px) {
@@ -228,10 +233,10 @@ section.banner {
       line-height: 200%;
       font-size: 20px;
 
-      .wp-block-buttons>.wp-block-button.wp-block-button__width-50 {
+      .wp-block-buttons > .wp-block-button.wp-block-button__width-50 {
         position: relative;
         right: 1.5rem;
-      }        
+      }
     }
 
     @media screen and (min-width: 850px) {
@@ -239,18 +244,20 @@ section.banner {
       flex-flow: row nowrap;
       justify-content: space-between;
 
-      & > div:first-of-type, & > div:last-of-type {
+      & > div:first-of-type,
+      & > div:last-of-type {
         max-width: 27%;
       }
     }
   }
 
-  .wp-block-buttons>.wp-block-button:last-child {
+  .wp-block-buttons > .wp-block-button:last-child {
     margin: 0;
   }
 }
 
 // Amandeep's work
+// Team members archive
 section.team-members {
   display: grid;
   grid-template-columns: 1fr;
@@ -276,14 +283,13 @@ section.team-members {
     article {
       flex: 0 1 29%;
     }
-
   }
 
   article {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 }
 
@@ -294,6 +300,7 @@ section.team-members {
 }
 
 // Qi's work
+// Contact page
 section.contact-page {
   padding: 0 1rem 0 1rem;
 
@@ -323,9 +330,10 @@ section.contact-page {
       align-items: center;
     }
   }
-  
+
+  // Form
   .contact-page-form {
-    .nf-form-content  {
+    .nf-form-content {
       font-size: 16px;
     }
 
@@ -339,26 +347,30 @@ section.contact-page {
       display: none;
     }
 
-    .nf-form-content .list-select-wrap .nf-field-element > div, .nf-form-content input:not([type="button"]), .nf-form-content textarea {
+    .nf-form-content .list-select-wrap .nf-field-element > div,
+    .nf-form-content input:not([type="button"]),
+    .nf-form-content textarea {
       border: 1px solid #737373;
       border-radius: 4px;
       background-color: white;
     }
 
-    .nf-form-content button, .nf-form-content input[type="button"], .nf-form-content input[type="submit"] {
+    .nf-form-content button,
+    .nf-form-content input[type="button"],
+    .nf-form-content input[type="submit"] {
       border-radius: 2px;
-      background: #032963; 
+      background: #032963;
       width: 150px;
       height: 48px;
     }
-     
   }
 }
 
 @media only screen and (min-width: 700px) {
-
   .contact-page-form {
-    .nf-form-content button, .nf-form-content input[type="button"], .nf-form-content input[type="submit"] {
+    .nf-form-content button,
+    .nf-form-content input[type="button"],
+    .nf-form-content input[type="submit"] {
       width: 200px;
     }
   }

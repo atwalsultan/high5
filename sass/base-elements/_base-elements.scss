@@ -1,11 +1,12 @@
 // Sultan's work
 
+// Site footer
 header {
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
   padding: 1rem;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid $header-border-bottom;
 
   @media screen and (min-width: 525px) {
     flex-flow: row nowrap;
@@ -41,25 +42,27 @@ header {
     height: auto;
   }
 
-  a, a:visited {
-    color: black;
+  a,
+  a:visited {
+    color: $text-color;
     text-decoration: none;
   }
 
   li.current-menu-item {
     a {
-      color: #FA812A;
+      color: $link-color2;
       font-weight: 600;
     }
   }
 }
 
+// Site footer
 footer {
-  padding: .2rem;
+  padding: 0.2rem;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: $footer-background;
   color: white;
 }

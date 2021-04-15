@@ -1,4 +1,5 @@
 // Abhishsek's work
+// Single review
 .single article.review {
   // Individual conatiners
   .single-excerpt {
@@ -6,10 +7,11 @@
   }
 }
 
+// Next and previous story links
 .single article.review .article-footer {
   .nav-links {
     a {
-      color: #032963;
+      color: $call-to-action-color;
     }
   }
 }
