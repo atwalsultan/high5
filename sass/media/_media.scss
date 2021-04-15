@@ -4,6 +4,7 @@ img {
 }
 
 // Abhishek's work
+// Single review
 .single article.review {
   .single-image {
     img {
@@ -15,6 +16,7 @@ img {
 }
 
 // Yuvraj's work
+// Features section
 section.features {
   article {
     .article-image {
@@ -23,11 +25,12 @@ section.features {
         width: auto;
         object-fit: cover;
       }
-    } 
+    }
   }
 }
 
 // Sultan's work
+// Reviews archive
 section.reviews {
   article {
     & > a {
@@ -38,10 +41,10 @@ section.reviews {
         overflow: hidden;
 
         &:hover {
-          transform: scale(1.4)
+          transform: scale(1.4);
         }
 
-        transition: transform .3s ease-out;
+        transition: transform 0.3s ease-out;
       }
     }
 
@@ -60,13 +63,14 @@ section.reviews {
 
 .review-page-content {
   & > img {
-      max-width: 80%;
-      display: block;
-      margin: auto;
+    max-width: 80%;
+    display: block;
+    margin: auto;
   }
 }
 
 // Amandeep's work
+// Team members archive
 section.team-members {
   article {
     div:first-of-type {
@@ -76,6 +80,6 @@ section.team-members {
         border-radius: 50%;
         object-fit: cover;
       }
-    }  
+    }
   }
 }
