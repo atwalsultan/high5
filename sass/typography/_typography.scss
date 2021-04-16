@@ -9,7 +9,7 @@
     h1 {
       margin: 0.5rem 0;
       font-weight: 600;
-      font-size: 2.5rem;
+      font-size: 1.75rem;
     }
     p {
       margin: 0;
@@ -59,7 +59,7 @@ section.features {
 
     @media screen and (min-width: 850px) {
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 1.75rem;
     }
   }
 
@@ -70,7 +70,7 @@ section.features {
     color: $text-color;
 
     @media screen and (min-width: 850px) {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -126,12 +126,18 @@ section.banner {
   font-size: 1.75rem;
   text-align: center;
   font-weight: 600;
+  margin-top: 3rem;
 }
 
 .review-page-content {
   h2 {
     margin-top: 3rem;
     font-weight: 600;
+  }
+
+  .wp-block-button__link {
+    font-size: 1rem;
+    padding: 19px 1.2em;
   }
 }
 
@@ -149,9 +155,10 @@ section.team-members {
 // Contact page
 section.contact-page {
   .contact-page-title {
-    font-size: 2rem;
-    margin-top: 0.25rem;
+    font-size: 1.75rem;
+    margin-top: 3rem;
     text-align: center;
+    font-weight: 600;
   }
 
   .contact-page-form {

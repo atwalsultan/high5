@@ -380,10 +380,10 @@ section.reviews article > a img {
   height: 100%;
   display: block;
   overflow: hidden;
-  -webkit-transition: -webkit-transform .3s ease-out;
-  transition: -webkit-transform .3s ease-out;
-  transition: transform .3s ease-out;
-  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
 section.reviews article > a img:hover {
@@ -567,13 +567,15 @@ section.features article .hand-icon {
   }
 }
 
-section.features article:first-of-type .article-content, section.features article:nth-of-type(3) .article-content {
+section.features article:first-of-type .article-content,
+section.features article:nth-of-type(3) .article-content {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
 }
 
-section.features article:first-of-type .article-image, section.features article:nth-of-type(3) .article-image {
+section.features article:first-of-type .article-image,
+section.features article:nth-of-type(3) .article-image {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -612,7 +614,7 @@ section.reviews article {
           flex-flow: row nowrap;
   border: 1px solid lightgray;
   max-width: 550px;
-  max-height: 400px;
+  height: 325px;
   margin: auto;
   border-radius: 5px;
   overflow: hidden;
@@ -657,11 +659,11 @@ section.reviews article .review-content .author {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 section.reviews article .review-content .author p {
-  margin: .25rem 0;
+  margin: 0.25rem 0;
 }
 
 section.reviews article .review-content .author .author-name-occupation {
@@ -671,8 +673,12 @@ section.reviews article .review-content .author .author-name-occupation {
 }
 
 section.reviews article .review-content .author .author-name-occupation p:last-of-type {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #737373;
+}
+
+.review-page-content {
+  margin-bottom: 6rem;
 }
 
 .review-page-content .wp-block-button {
@@ -738,7 +744,8 @@ section.banner article div:nth-of-type(2) .wp-block-buttons > .wp-block-button.w
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  section.banner article > div:first-of-type, section.banner article > div:last-of-type {
+  section.banner article > div:first-of-type,
+  section.banner article > div:last-of-type {
     max-width: 27%;
   }
 }
@@ -753,7 +760,7 @@ section.team-members {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   gap: 2.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 
 @media screen and (min-width: 475px) {
@@ -802,7 +809,7 @@ section.team-members article {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .review-page-content .wp-block-button__link {
@@ -811,6 +818,9 @@ section.team-members article {
 
 section.contact-page {
   padding: 0 1rem 0 1rem;
+  margin-bottom: 5rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
 section.contact-page .contact-page-content-wrapper {
@@ -879,13 +889,17 @@ section.contact-page .contact-page-form .nf-form-fields-required {
   display: none;
 }
 
-section.contact-page .contact-page-form .nf-form-content .list-select-wrap .nf-field-element > div, section.contact-page .contact-page-form .nf-form-content input:not([type="button"]), section.contact-page .contact-page-form .nf-form-content textarea {
+section.contact-page .contact-page-form .nf-form-content .list-select-wrap .nf-field-element > div,
+section.contact-page .contact-page-form .nf-form-content input:not([type="button"]),
+section.contact-page .contact-page-form .nf-form-content textarea {
   border: 1px solid #737373;
   border-radius: 4px;
   background-color: white;
 }
 
-section.contact-page .contact-page-form .nf-form-content button, section.contact-page .contact-page-form .nf-form-content input[type="button"], section.contact-page .contact-page-form .nf-form-content input[type="submit"] {
+section.contact-page .contact-page-form .nf-form-content button,
+section.contact-page .contact-page-form .nf-form-content input[type="button"],
+section.contact-page .contact-page-form .nf-form-content input[type="submit"] {
   border-radius: 2px;
   background: #032963;
   width: 150px;
@@ -893,7 +907,9 @@ section.contact-page .contact-page-form .nf-form-content button, section.contact
 }
 
 @media only screen and (min-width: 700px) {
-  .contact-page-form .nf-form-content button, .contact-page-form .nf-form-content input[type="button"], .contact-page-form .nf-form-content input[type="submit"] {
+  .contact-page-form .nf-form-content button,
+  .contact-page-form .nf-form-content input[type="button"],
+  .contact-page-form .nf-form-content input[type="submit"] {
     width: 200px;
   }
 }
@@ -905,7 +921,7 @@ section.contact-page .contact-page-form .nf-form-content button, section.contact
 .single article.review .article-header h1 {
   margin: 0.5rem 0;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
 }
 
 .single article.review .article-header p {
@@ -935,7 +951,7 @@ body {
 
 .wp-block-button__link {
   font-size: 1rem;
-  padding: .5em 1.2em;
+  padding: 0.5em 1.2em;
 }
 
 section.features .section-title {
@@ -944,14 +960,14 @@ section.features .section-title {
   font-weight: 600;
   font-size: 1.75rem;
   text-transform: capitalize;
-  color: #1C1C1C;
+  color: #1c1c1c;
   text-align: left;
 }
 
 @media screen and (min-width: 850px) {
   section.features .section-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -959,12 +975,12 @@ section.features .feature-title {
   font-size: 1.5rem;
   margin: 0;
   font-weight: 600;
-  color: #1C1C1C;
+  color: #1c1c1c;
 }
 
 @media screen and (min-width: 850px) {
   section.features .feature-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -987,7 +1003,7 @@ section.features .ext-link {
   font-size: 1rem;
   line-height: 1.5rem;
   text-transform: uppercase;
-  color: #5078B5;
+  color: #5078b5;
   text-decoration: none;
 }
 
@@ -996,7 +1012,7 @@ section.features .ext-link:hover {
 }
 
 section.features article:last-of-type .ext-link {
-  color: #FA812A;
+  color: #fa812a;
 }
 
 article.page.type-page {
@@ -1015,6 +1031,7 @@ section.banner .banner-content h2 {
   font-size: 1.75rem;
   text-align: center;
   font-weight: 600;
+  margin-top: 3rem;
 }
 
 .review-page-content h2 {
@@ -1022,14 +1039,20 @@ section.banner .banner-content h2 {
   font-weight: 600;
 }
 
+.review-page-content .wp-block-button__link {
+  font-size: 1rem;
+  padding: 19px 1.2em;
+}
+
 section.team-members article div:nth-of-type(2) {
   font-weight: 600;
 }
 
 section.contact-page .contact-page-title {
-  font-size: 2rem;
-  margin-top: .25rem;
+  font-size: 1.75rem;
+  margin-top: 3rem;
   text-align: center;
+  font-weight: 600;
 }
 
 section.contact-page .contact-page-form .nf-form-content {
@@ -1129,18 +1152,19 @@ header img {
   height: auto;
 }
 
-header a, header a:visited {
-  color: black;
+header a,
+header a:visited {
+  color: #1c1c1c;
   text-decoration: none;
 }
 
 header li.current-menu-item a {
-  color: #FA812A;
+  color: #fa812a;
   font-weight: 600;
 }
 
 footer {
-  padding: .2rem;
+  padding: 0.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

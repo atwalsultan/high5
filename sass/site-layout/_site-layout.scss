@@ -147,7 +147,7 @@ section.reviews {
     flex-flow: row nowrap;
     border: 1px solid lightgray;
     max-width: 550px;
-    max-height: 400px;
+    height: 325px;
     margin: auto;
     border-radius: 5px;
     overflow: hidden;
@@ -198,6 +198,7 @@ section.reviews {
 }
 
 .review-page-content {
+  margin-bottom: 6rem;
   .wp-block-button {
     text-align: center;
 
@@ -262,7 +263,7 @@ section.team-members {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 
   @media screen and (min-width: 475px) {
     grid-template-columns: repeat(2, 1fr);
@@ -303,6 +304,9 @@ section.team-members {
 // Contact page
 section.contact-page {
   padding: 0 1rem 0 1rem;
+  margin-bottom: 5rem;
+  max-width: 1000px;
+  margin: auto;
 
   .contact-page-content-wrapper {
     display: flex;
